@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section class="widget widget__hidden">
+      <div id="chat" class="widget__row widget__row--chat">
+        <div class="widget__avatar" id="operatorAvatar"></div>
+        <div class="widget__row-info">
+          <p class="widget__row-name">Консультант по сложным вопросам</p>
+          <p class="widget__row-description">Бесплатная консультация</p>
+        </div>
+      </div>
+      <div id="call" class="widget__row widget__row--call">
+        <div class="widget__avatar">
+          <img
+            width="100%"
+            src="./call.png"
+            alt="Закажите звонок"
+            height="100%"
+          />
+        </div>
+        <div class="widget__row-info">
+          <p class="widget__row-name">Закажите звонок!</p>
+          <p class="widget__row-description">Мы перезвоним в удобное время.</p>
+        </div>
+      </div>
+      <main class="widget__body">
+        <div id="callContent" class="widget__call hidden">
+          <p class="widget__call-description">
+            Выберите время и оставьте номер телефона, мы вам перезвоним.
+          </p>
+          <form id="widget-form" class="widget__form" action="#">
+            <label class="widget__input widget__phone">
+              <input type="tel" placeholder="Телефон" />
+              <div class="icon">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 202.592 202.592"
+                  style="enable-background: new 0 0 202.592 202.592"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        style="fill: currentColor"
+                        d="M198.048,160.105l-31.286-31.29c-6.231-6.206-16.552-6.016-23.001,0.433l-15.761,15.761
+			c-0.995-0.551-2.026-1.124-3.11-1.732c-9.953-5.515-23.577-13.074-37.914-27.421C72.599,101.48,65.03,87.834,59.5,77.874
+			c-0.587-1.056-1.145-2.072-1.696-3.038l10.579-10.565l5.2-5.207c6.46-6.46,6.639-16.778,0.419-23.001L42.715,4.769
+			c-6.216-6.216-16.541-6.027-23.001,0.433l-8.818,8.868l0.243,0.24c-2.956,3.772-5.429,8.124-7.265,12.816
+			c-1.696,4.466-2.752,8.729-3.235,12.998c-4.13,34.25,11.52,65.55,53.994,108.028c58.711,58.707,106.027,54.273,108.067,54.055
+			c4.449-0.53,8.707-1.593,13.038-3.275c4.652-1.818,9.001-4.284,12.769-7.233l0.193,0.168l8.933-8.747
+			C204.079,176.661,204.265,166.343,198.048,160.105z M190.683,176.164l-3.937,3.93l-1.568,1.507
+			c-2.469,2.387-6.743,5.74-12.984,8.181c-3.543,1.364-7.036,2.24-10.59,2.663c-0.447,0.043-44.95,3.84-100.029-51.235
+			C14.743,94.38,7.238,67.395,10.384,41.259c0.394-3.464,1.263-6.95,2.652-10.593c2.462-6.277,5.812-10.547,8.181-13.02l5.443-5.497
+			c2.623-2.63,6.714-2.831,9.112-0.433l31.286,31.286c2.394,2.401,2.205,6.492-0.422,9.13L45.507,73.24l1.95,3.282
+			c1.084,1.829,2.23,3.879,3.454,6.106c5.812,10.482,13.764,24.83,29.121,40.173c15.317,15.325,29.644,23.27,40.094,29.067
+			c2.258,1.249,4.32,2.398,6.17,3.5l3.289,1.95l21.115-21.122c2.634-2.623,6.739-2.817,9.137-0.426l31.272,31.279
+			C193.5,169.446,193.31,173.537,190.683,176.164z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </label>
+            <label class="widget__input widget__name">
+              <input type="text" placeholder="Имя" />
+              <div class="icon">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 456.368 456.368"
+                  style="enable-background: new 0 0 456.368 456.368"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          style="fill: currentColor"
+                          d="M324.194,220.526c-6.172,7.772-13.106,14.947-21.07,21.423c45.459,26.076,76.149,75.1,76.149,131.158
+                  c0,30.29-66.367,54.018-151.09,54.018s-151.09-23.728-151.09-54.018c0-56.058,30.69-105.082,76.149-131.158
+                  c-7.963-6.476-14.897-13.65-21.07-21.423c-50.624,31.969-84.322,88.41-84.322,152.581c0,19.439,10.644,46.53,61.355,65.201
+                  c31.632,11.647,73.886,18.06,118.979,18.06c45.093,0,87.347-6.413,118.979-18.06c50.71-18.671,61.355-45.762,61.355-65.201
+                  C408.516,308.936,374.818,252.495,324.194,220.526z"
+                        />
+                        <path
+                          style="fill: currentColor"
+                          d="M228.182,239.795c56.833,0,100.597-54.936,100.597-119.897C328.779,54.907,284.993,0,228.182,0
+                  c-56.833,0-100.597,54.936-100.597,119.897C127.585,184.888,171.372,239.795,228.182,239.795z M228.182,29.243
+                  c39.344,0,71.354,40.667,71.354,90.654s-32.01,90.654-71.354,90.654s-71.354-40.667-71.354-90.654S188.838,29.243,228.182,29.243
+                  z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </label>
+            <button class="widget__submit">Жду звонка</button>
+          </form>
+          <button id="backToChat" class="widget__back-to-chat hidden">
+            Вернуться в чат
+          </button>
+        </div>
+        <div id="chatContent" class="widget__chat hidden">
+          <div class="widget__chat-history">
+            <div class="widget__message-is-typing hidden">
+              <div class="widget__dot"></div>
+              <p>Подождите, Вам пишут сообщение</p>
+            </div>
+          </div>
+
+          <div class="widget__message-input widget__message-input--hidden">
+            <input type="text" placeholder="Введите ваше сообщение" />
+            <button class="widget__message-send"></button>
+          </div>
+        </div>
+      </main>
+      <footer id="footer" class="widget__footer hidden" />
+    </section>
+    <script src="./config.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
