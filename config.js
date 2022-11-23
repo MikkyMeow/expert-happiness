@@ -54,7 +54,7 @@ const operatorAnswerMessages = [
 ];
 
 // Таймаут всплытия при загрузке страницы
-const firstShowingTimeout = 0;
+const firstShowingTimeout = 1000;
 
 // Таймаут всплытия для мобильных устройств
-const firstShowingTimeoutMobile = 0;
+const firstShowingTimeoutMobile = 3000;

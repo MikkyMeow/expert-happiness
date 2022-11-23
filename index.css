@@ -45,6 +45,7 @@ p {
   padding: 16px 20px;
   z-index: 1;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .widget__row--call {
@@ -373,55 +374,22 @@ p {
   opacity: 0;
 }
 
-.widget__message--operator .widget__message-text::before {
-  content: "";
+.widget__message--operator .widget__message-text .chat-arrow {
   position: absolute;
-  left: -20px;
-  bottom: 0;
-  display: block;
-  width: 20px;
-  border-radius: 0 0 10px;
-  height: 10px;
-  box-shadow: var(--border) 10px 0px 0px 0px;
+  left: -16px;
+  bottom: -9.8px;
+  transform: rotate(4deg);
+  width: 24px;
+  height: 24px;
 }
 
-.widget__message--operator .widget__message-text::after {
-  content: "";
+.widget__message--user .widget__message-text .chat-arrow {
   position: absolute;
-  left: -21px;
-  bottom: 0;
-  display: block;
-  width: 20px;
-  border-right: 0.5px solid var(--border);
-  border-radius: 0 0 10px;
-  height: 10px;
-  background-color: transparent;
-  box-shadow: #ffffff 11px -0.8px 0px 0px;
-}
-
-.widget__message--user .widget__message-text::before {
-  content: "";
-  position: absolute;
-  right: -20px;
-  bottom: 0px;
-  display: block;
-  width: 19px;
-  border-radius: 0 0 0 10px;
-  height: 10px;
-  box-shadow: var(--border) -10px 0px 0px 0px;
-}
-
-.widget__message--user .widget__message-text::after {
-  content: "";
-  position: absolute;
-  right: -20px;
-  bottom: 0px;
-  display: block;
-  width: 20px;
-  border-radius: 0 0 0 10px;
-  height: 10px;
-  background-color: transparent;
-  box-shadow: #ffffff -10px -0.6px 0px 0px;
+  right: -16px;
+  bottom: -9.8px;
+  transform: rotateY(180deg) rotate(4deg);
+  width: 24px;
+  height: 24px;
 }
 
 .widget__message-sent {

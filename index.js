@@ -190,6 +190,7 @@ const operatorMessage = (message, withForm) => {
 			<input type="text" placeholder="Имя" />
 			<button>Ответить</button>
 			</form>
+      <svg class="chat-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M12.48641,2.86123c-.137231,7.40254-2.334071,8.514395-7.897,10.30043" transform="matrix(.978148 0.207912-.207912 0.978148 3.077987-2.138515)" fill="none" stroke="var(--border)" stroke-width="0.5"/><path d="M17.742752,8.063182C15.25045,12.341268,8.766228,16.660439,4.58941,12.81958" transform="matrix(.978148 0.207912-.207912 0.978148 2.81636-1.847575)" fill="none" stroke="var(--border)" stroke-width="0.5"/><path d="M15.118741,3.256261C13.243681,9.686808,12.740035,11.237498,5.629051,12c1.970767,2.254561,7.11808,2.848809,12.216937-2.271667-.778292-5.176701-.128161.338544-2.727247-6.472072Z" transform="translate(.000001 0)" fill="#f9f9f9" stroke="#f9f9f9" stroke-width="0.5"/></svg>
 		</div>
 		<span class="widget__message-sent">Отправлено в ${now}</span>
 	</div>
@@ -198,7 +199,10 @@ const operatorMessage = (message, withForm) => {
 
   return `
 	<div class="widget__message widget__message--operator">
-		<p class="widget__message-text">${message}</p>
+		<p class="widget__message-text">
+      ${message}
+      <svg class="chat-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M12.48641,2.86123c-.137231,7.40254-2.334071,8.514395-7.897,10.30043" transform="matrix(.978148 0.207912-.207912 0.978148 3.077987-2.138515)" fill="none" stroke="var(--border)" stroke-width="0.5"/><path d="M17.742752,8.063182C15.25045,12.341268,8.766228,16.660439,4.58941,12.81958" transform="matrix(.978148 0.207912-.207912 0.978148 2.81636-1.847575)" fill="none" stroke="var(--border)" stroke-width="0.5"/><path d="M15.118741,3.256261C13.243681,9.686808,12.740035,11.237498,5.629051,12c1.970767,2.254561,7.11808,2.848809,12.216937-2.271667-.778292-5.176701-.128161.338544-2.727247-6.472072Z" transform="translate(.000001 0)" fill="#f9f9f9" stroke="#f9f9f9" stroke-width="0.5"/></svg>
+    </p>
 		<span class="widget__message-sent">Отправлено в ${now}</span>
 	</div>
 		`;
@@ -206,7 +210,10 @@ const operatorMessage = (message, withForm) => {
 
 const userMessage = (message) => {
   return `<div class="widget__message widget__message--user">
-  <p class="widget__message-text" contenteditable="false">${message}</p>
+  <p class="widget__message-text" contenteditable="false">
+    ${message}
+    <svg class="chat-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M12.48641,2.86123c-.137231,7.40254-2.334071,8.514395-7.897,10.30043" transform="matrix(.978148 0.207912-.207912 0.978148 3.077987-2.138515)" fill="none" stroke="var(--border)" stroke-width="0.5"/><path d="M17.742752,8.063182C15.25045,12.341268,8.766228,16.660439,4.58941,12.81958" transform="matrix(.978148 0.207912-.207912 0.978148 2.81636-1.847575)" fill="none" stroke="var(--border)" stroke-width="0.5"/><path d="M15.118741,3.256261C13.243681,9.686808,12.740035,11.237498,5.629051,12c1.970767,2.254561,7.11808,2.848809,12.216937-2.271667-.778292-5.176701-.128161.338544-2.727247-6.472072Z" transform="translate(.000001 0)" fill="#f9f9f9" stroke="#f9f9f9" stroke-width="0.5"/></svg>
+  </p>
   <button class="widget__message-edit">
     <svg
       version="1.1"
